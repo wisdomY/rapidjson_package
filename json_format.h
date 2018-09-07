@@ -26,7 +26,7 @@
     void FormatJsonToString(rapidjson::Value &jsonDoc, rapidjson::Document::AllocatorType &allocator) \
     {
 
-#define FORMAT_JSON_BUNBER(name) \
+#define FORMAT_JSON_NUMBER(name) \
         jsonDoc.AddMember(#name, m_##name, allocator); 
 
 #define FORMAT_JSON_STRING(name) \
